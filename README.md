@@ -1,3 +1,7 @@
+## Streamlit Dashboard
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://itsdakshjain-customer-churn-prediction.streamlit.app/)
+
 # Customer Churn Prediction: A Comparative Machine Learning Approach
 
 ## Project Overview
