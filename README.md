@@ -1,3 +1,7 @@
+## Streamlit Dashboard
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://itsdakshjain-customer-churn-prediction.streamlit.app/)
+
 # Customer Churn Prediction: A Comparative Machine Learning Approach
 
 ## Project Overview
@@ -49,3 +53,67 @@ When initial test runs yielded 100% accuracy, we identified this as "Overfitting
 
 
 The result is a model suite that maintains ~95% accuracy while remaining robust enough for production deployment.
+
+## System Architecture and Deployment
+
+### 1. Project Directory Structure
+To maintain professional engineering standards, the project is organized into modular directories. This ensures a clean separation between raw research, processed assets, and the production interface.
+
+* **`/models`**: Contains serialized `.pkl` files for the trained Random Forest, SVM, and Scaler objects.
+* **`/notebooks`**: Documented Jupyter Notebooks (v1, v2, v3) showing the evolution of the EDA and model training phases.
+* **`/data`**: The source customer dataset used for training and validation.
+* **`/dev_versions`**: Archived early-stage scripts and experimental dashboard iterations.
+* **`app.py`**: The production Streamlit application script.
+* **`requirements.txt`**: The comprehensive list of dependencies required to reconstruct the environment.
+
+### 2. Local Installation and Usage
+To run this project locally, ensure you have Python 3.9+ installed, then follow these steps:
+
+**Step 1: Clone the Repository**
+
+```bash
+git clone [https://github.com/itsdakshjain/Customer-Churn-Prediction.git](https://github.com/itsdakshjain/Customer-Churn-Prediction.git)
+cd Customer-Churn-Prediction
+```
+
+**Step 2: Create a Virtual Environment**
+
+```bash
+python -m venv venv
+# On Windows:
+venv\Scripts\activate
+# On Mac/Linux:
+source venv/bin/activate
+```
+
+**Step 3: Install Dependencies**
+
+```bash
+pip install -r requirements.txt
+```
+
+**Step 4: Run the Application**
+
+```bash
+streamlit run app.py
+```
+
+### 3. Key Features
+* **Real-time Risk Assessment:** Instant churn probability scoring based on live user input.
+* **Smart UX (Auto-Jump):** Features an automated "scroll-to-result" anchor that glides the user directly to their analysis once the prediction is ready.
+* **Dynamic Visualizations:** Dual-layered risk gauges and feature importance bar charts to explain the "Why" behind every prediction.
+* **Intelligent UI:** Responsive design that adapts to mobile/desktop, featuring a "thinking" AI spinner and interactive success notifications.
+* **Machine Learning Backend:** Modular integration of Random Forest and SVM architectures, allowing for model comparison and high-accuracy cross-validation.
+
+### 4. Deployment
+The application is optimized for cloud deployment via **Streamlit Cloud**. The production environment is configured to automatically synchronize with the `main` branch of this repository, ensuring that any updates to the models or UI are reflected in real-time on the live URL.
+
+---
+
+## License
+This project is licensed under the **MIT License**—a permissive license that allows for personal and commercial use while providing a disclaimer of warranty. See the [LICENSE](LICENSE) file for the full text.
+
+## Contact & Credits
+**Developer:** Daksh Jain  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/daksh-jain-6b31772b9/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/itsdakshjain)
